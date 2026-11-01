@@ -1,0 +1,1 @@
+Wyszukiwarka internetowa przeszukuje ogromną liczbę dokumentów i zwraca te, które najlepiej pasują do zapytania. Do tego służy indeks, czyli uporządkowana reprezentacja dokumentów. Ważność słów w dokumencie można ocenić miarą tf-idf. Podobieństwo zapytania do dokumentu można liczyć za pomocą podobieństwa cosinusowego. Dobra wyszukiwarka zwraca wyniki posortowane według trafności.

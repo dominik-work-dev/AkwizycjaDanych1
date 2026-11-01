@@ -1,0 +1,1 @@
+Baza danych służy do przechowywania i wyszukiwania informacji. SQLite to lekka baza danych zapisywana w jednym pliku. Dane w bazie są ułożone w tabelach, a do ich pobierania służy język SQL. Dobra baza danych zapewnia spójność danych i szybkie wyszukiwanie. Bazy danych są używane w prawie każdej aplikacji.
