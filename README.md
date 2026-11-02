@@ -17,3 +17,9 @@ Projekt składa się z dwóch programów:
 ```
 pip install -r requirements.txt
 ```
+## Uruchamianie
+
+```
+python run_indexer.py
+python run_searcher.py "kot i pies"
+```
