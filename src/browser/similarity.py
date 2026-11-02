@@ -19,11 +19,3 @@ def cosine_similarity(vector_a, vector_b):
     if sum_a == 0 or sum_b == 0:
         return 0.0
     return dot_product / (math.sqrt(sum_a) * math.sqrt(sum_b))
-
-
-def dot_product_similarity(vector_a, vector_b):
-    dot_product = 0.0
-    for token, value in vector_a.items():
-        if token in vector_b:
-            dot_product += value * vector_b[token]
-    return dot_product
