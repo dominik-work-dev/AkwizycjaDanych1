@@ -1,3 +1,4 @@
+from unidecode import unidecode
 import re
 
 # Słowa pomijane przy indeksowaniu i wyszukiwaniu (stop words).
@@ -41,7 +42,9 @@ STOP_WORDS = {
 
 
 def tokenize(text, stop_words=STOP_WORDS):
-    """Zamienia tekst na listę tokenów - małe litery, bez stop words."""
+    """Zamienia tekst na listę tokenów - małe litery, bez stop words, usuwa polskie znaki."""
+    text = text.lower()
+    text = unidecode(text)  # żółw -> zolw
     words = re.findall(r"\w+", text.lower())
     tokens = []
     for word in words:
