@@ -23,3 +23,9 @@ pip install -r requirements.txt
 python run_indexer.py
 python run_searcher.py "kot i pies"
 ```
+
+## Testy:
+
+```
+python -m unittest discover -s src -t . -v
+```
