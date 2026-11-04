@@ -21,7 +21,8 @@ pip install -r requirements.txt
 
 ```
 python run_indexer.py
-python run_searcher.py "kot i pies"
+python run_searcher.py "kot i pies" - uruchomienie wyszukiwarki w terminalu
+python run_gui.py - uruchomienie aplikacji z gui 
 ```
 
 ## Testy:
