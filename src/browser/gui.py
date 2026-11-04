@@ -80,12 +80,6 @@ class SearchApp(ctk.CTk):
 
     def on_query_change(self, event=None):
         query = self.entry.get().strip()
-        if event:
-            print(
-                "char =", repr(event.char),
-                "keysym =", event.keysym,
-                "keycode =", event.keycode
-            )
         if event and event.keysym in ("Alt_R", "ISO_Level3_Shift", "Control_L", "Control_R", "Shift_L", "Shift_R"):
             return
         if query == "":
