@@ -30,3 +30,9 @@ python run_gui.py - uruchomienie aplikacji z gui
 ```
 python -m unittest discover -s src -t . -v
 ```
+
+## Fix dla WARNING:root:apitools not found, and bigquery client libraries are not available despite the import not raising an ImportError.
+```
+Get-ChildItem .venv\Lib\site-packages\apache_beam -Recurse -Filter *.pyd | Rename-Item -NewName { $_.Name + ".bak" }
+python run_indexer.py
+```
